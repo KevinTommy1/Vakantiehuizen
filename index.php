@@ -8,6 +8,8 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
+    <link href="css/style.css" rel="stylesheet">
+
     <?php
     include('config/db_config.php');
     ?>
@@ -18,6 +20,14 @@
     <header>
         <?php
         include('content/navbar.php');
+        $link = isset($_GET['link']) ? $_GET['link'] : 'home';
+        if ($link == 'home') {
+            include 'content/home.php';
+        } else if ($link == 'vakantiehuizen') {
+            include 'content/vakantiehuizen.php';
+        } else if ($link == 'contact') {
+            include 'content/contact.php';
+        }
         ?>
     </header>
 </body>

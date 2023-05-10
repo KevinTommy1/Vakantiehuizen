@@ -1,0 +1,9 @@
+.logo {
+    height: clamp(40px,5vh,100px);
+    aspect-ratio: 16/9;
+}
+
+.active {
+    background: rgba(14, 87, 0, 0.5);
+    border-radius: 8px;
+}
