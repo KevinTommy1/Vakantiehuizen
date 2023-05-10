@@ -1,9 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
 .logo {
-    height: clamp(40px,5vh,100px);
+    height: clamp(40px, 5vh, 100px);
     aspect-ratio: 16/9;
 }
 
 .active {
-    background: rgba(14, 87, 0, 0.5);
+    background-color: rgba(93, 133, 36, 0.747);
     border-radius: 8px;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
+    box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
+}
+
+.child {
+    position: absolute;
+}
+
+.background-img {
+    height: 50vh;
+    width: 105vw;
+}
+
+.cover-img {
+    height:50vh;
+    width:100vw;
+}
+
+.blurbackground {
+    backdrop-filter: blur(9px);
 }
