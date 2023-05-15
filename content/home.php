@@ -5,20 +5,33 @@
         </div>
         <div class="child blurbackground cover-img">
             <?php
-            $sql = "SELECT titel, pagina, tekst FROM teksten";
-
             // Execute the query and fetch the results
-            $sys = $conn->query($sql);
+            $sys = $conn->query("SELECT titel, pagina, tekst FROM teksten");
             $results = $sys->fetchAll(PDO::FETCH_ASSOC);
 
             // Loop through the results and print the desired columns
             foreach ($results as $row) {
                 if ($row['pagina'] == $link) {
-                    echo "<h1 class='ps-4 pe-4 cover-img'>" . $row['titel'] . "</h1>";
-                    echo "</div></div><div class='row'>";
-                    echo "<p class='ps-4 pe-4'>" . $row['tekst'] . "</p>";
+                    echo "<h1 class='titel'>" . $row['titel'] . "</h1>";
                 }
             }
             ?>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <i class="fa-solid fa-check-double d-flex"></i><p class="d-flex">test</p>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <?php
+        foreach ($results as $row) {
+            if ($row['pagina'] == $link) {
+                echo "<p class='ps-4 pe-4'>" . $row['tekst'] . "</p>";
+            }
+        }
+        ?>
+    </div>
+</div>

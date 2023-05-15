@@ -1,8 +1,11 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     overflow-x: hidden;
+    font-size:2vh;
+    font-family: 'BPGArialRegular';
+    font-weight: normal;
+    font-style: normal; 
   }
 
 .logo {
@@ -23,15 +26,22 @@ html, body {
 }
 
 .background-img {
-    height: 50vh;
-    width: 105vw;
+    height: clamp(300px,50vh,700px);
+    width: 100vw;
 }
 
 .cover-img {
-    height:50vh;
+    left:0px;
+    height:clamp(300px,50vh,700px);
     width:100vw;
 }
 
 .blurbackground {
     backdrop-filter: blur(9px);
+}
+
+.titel {
+    padding-left:5vw !important;
+    padding-right:5vw !important;
+    padding-top:clamp(70px,15vh,900px) !important;
 }
