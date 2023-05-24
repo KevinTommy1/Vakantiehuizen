@@ -1,12 +1,18 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-size:2vh;
+    font-size: 20px;
     font-family: 'BPGArialRegular';
     font-weight: normal;
-    font-style: normal; 
-  }
+    font-style: normal;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+}
 
 .logo {
     height: clamp(40px, 5vh, 100px);
@@ -16,9 +22,9 @@ html, body {
 .active {
     background-color: rgba(93, 133, 36, 0.747);
     border-radius: 8px;
-    -webkit-box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
-    -moz-box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
-    box-shadow: 2px 2px 0px 0px rgba(56,99,80,1);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(56, 99, 80, 1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(56, 99, 80, 1);
+    box-shadow: 2px 2px 0px 0px rgba(56, 99, 80, 1);
 }
 
 .child {
@@ -26,14 +32,14 @@ html, body {
 }
 
 .background-img {
-    height: clamp(300px,50vh,700px);
+    height: clamp(300px, 50vh, 700px);
     width: 100vw;
 }
 
 .cover-img {
-    left:0px;
-    height:clamp(300px,50vh,700px);
-    width:100vw;
+    left: 0px;
+    height: clamp(300px, 50vh, 700px);
+    width: 100vw;
 }
 
 .blurbackground {
@@ -41,7 +47,46 @@ html, body {
 }
 
 .titel {
-    padding-left:5vw !important;
-    padding-right:5vw !important;
-    padding-top:clamp(70px,15vh,900px) !important;
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    padding-top: clamp(70px, 15vh, 900px) !important;
+}
+
+.ul-same-row {
+    overflow: hidden;
+    list-style: none;
+    width: fit-content;
+    block-size: fit-content;
+    justify-self: center;
+
+}
+
+.ul-same-row li{
+    padding-right: 1vw;
+    float: left;
+}
+
+.inline-flex {
+    display:inline-flex;
+}
+
+.subtext {
+    font-size:16px;
+}
+
+.cont-subtext {
+    padding-top: 1vh;
+    border: 1px solid rgb(76, 108, 32);
+    border-radius:3px;
+    background-color: rgb(126, 181, 49);
+}
+
+.cont-subtext-2 {
+    border: 1px solid #e6e6e6;
+    background-color: #f8f9fa;
+}
+
+.wordkleinerkutding {
+    margin:auto;
+    width:50%;
 }
