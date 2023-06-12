@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="login">
+                <div class="Adminlogin">
                     <?php
                     //start the session
                     session_start();
