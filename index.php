@@ -24,17 +24,17 @@
 <body>
     <header>
         <?php
-        include('content/navbar.php');
+        include('public/navbar.php');
         ?>
     </header>
     <?php
     $link = isset($_GET['link']) ? $_GET['link'] : 'home';
     if ($link == 'home') {
-        include 'content/home.php';
+        include 'public/home.php';
     } else if ($link == 'vakantiehuizen') {
-        include 'content/vakantiehuizen.php';
+        include 'public/vakantiehuizen.php';
     } else if ($link == 'admin') {
-        include 'content/admin.php';
+        include 'public/admin.php';
     }
     ?>
 </body>
