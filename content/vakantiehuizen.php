@@ -20,21 +20,21 @@
 </div>
 <div class="row">
     <div class="row p-5">
-    <?php
-    $firstInArray = true;
-    $lastId = 0;
+        <?php
+        $firstInArray = true;
+        $lastId = 0;
 
-    $sql = "SELECT h.personen, h.prijs, h.huis, h.omschrijving_small, h.omschrijving, h.id, a.huis_id, a.afbeelding
+        $sql = "SELECT h.personen, h.prijs, h.huis, h.omschrijving_small, h.omschrijving, h.id, a.huis_id, a.afbeelding
     FROM huizen h
     LEFT JOIN afbeeldingen a ON a.huis_id = h.id
     ORDER BY h.huis";
 
-    $sys = $conn->query($sql);
-    $results = $sys->fetchAll(PDO::FETCH_ASSOC);
+        $sys = $conn->query($sql);
+        $results = $sys->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($results as $row) {
-        if ($row['id'] != $lastId) {
-            echo "
+        foreach ($results as $row) {
+            if ($row['id'] != $lastId) {
+                echo "
 <div class='col-md-6 col-lg-4 col-xl-3 col-xxl-3 mt-3'>
     <div class='card m-auto h-100'>
         <div class='card-header'>
@@ -61,20 +61,20 @@
                 <div id='carousel" . $row['id'] . "' class='carousel slide'>
                     <div class='carousel-inner'>";
 
-            foreach ($results as $picture) {
-                if ($picture['huis_id'] == $row['id'] && $picture['afbeelding'] != null) {
-                    echo "<div class='carousel-item";
-                    if ($firstInArray) {
-                        echo " active";
-                        $firstInArray = false;
-                    }
-                    echo "'>
+                foreach ($results as $picture) {
+                    if ($picture['huis_id'] == $row['id'] && $picture['afbeelding'] != null) {
+                        echo "<div class='carousel-item";
+                        if ($firstInArray) {
+                            echo " active";
+                            $firstInArray = false;
+                        }
+                        echo "'>
                             <img src='" . $picture['afbeelding'] . "' class='d-block w-100 h-50'>
                         </div>";
+                    }
                 }
-            }
 
-            echo "</div>
+                echo "</div>
                     <button class='carousel-control-prev' type='button' data-bs-target='#carousel" . $row['id'] . "' data-bs-slide='prev'>
                         <span class='carousel-control-prev-icon' aria-hidden='true'></span>
                         <span class='visually-hidden'>Previous</span>
@@ -92,10 +92,10 @@
         </div>
     </div>
 </div>";
-            $lastId = $row['id'];
+                $lastId = $row['id'];
+            }
         }
-    }
-?>
+        ?>
 
     </div>
 

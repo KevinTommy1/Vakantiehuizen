@@ -24,9 +24,9 @@ $link = isset($_GET['link']) ? $_GET['link'] : 'home';
             </li>
             <li class="nav-item">
                 <a class="nav-link ps-2 pe-2 <?php
-                if ($link == "contact") {
+                if ($link == "admin") {
                     echo "active";
-                } ?>" href="?link=contact">Contact</a>
+                } ?>" href="?link=admin">Login</a>
             </li>
         </ul>
     </div>

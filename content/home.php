@@ -62,7 +62,8 @@
                         </li>
                     </ul>
                 </div>
-                <p class="subtext">Ervaar de zeeuwse cultuur, struin langs de mooie duinen, of ga lekker zonnen op strand!</p>
+                <p class="subtext">Ervaar de zeeuwse cultuur, struin langs de mooie duinen, of ga lekker zonnen op
+                    strand!</p>
             </div>
         </div>
         <div class="col-md"></div>

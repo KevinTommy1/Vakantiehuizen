@@ -13,7 +13,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/geo-1" type="text/css"/> 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/geo-1" type="text/css" />
 
     <?php
     include('config/db_config.php');
@@ -33,8 +33,8 @@
         include 'content/home.php';
     } else if ($link == 'vakantiehuizen') {
         include 'content/vakantiehuizen.php';
-    } else if ($link == 'contact') {
-        include 'content/contact.php';
+    } else if ($link == 'admin') {
+        include 'content/admin.php';
     }
     ?>
 </body>
