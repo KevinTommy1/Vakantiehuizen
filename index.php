@@ -11,7 +11,6 @@
 
     <!-- Stylesheet links -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap-breakpoint.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/geo-1" type="text/css"/> 

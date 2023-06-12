@@ -23,6 +23,15 @@ huis_id int,
 afbeelding varchar(100),
 FOREIGN KEY (huis_id) REFERENCES huizen(id)
 );
+create table contact(
+        id int primary key auto_increment,
+        naam varchar(255),
+        email varchar(255),
+        TelefoonNummer integer(10),
+        adres varchar(255),
+        bericht varchar(255),
+        ipAddres varchar(255)
+);
 
 
 INSERT INTO teksten (pagina,titel,tekst)
