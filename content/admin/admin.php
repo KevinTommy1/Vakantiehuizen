@@ -5,7 +5,15 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="login">
-
+                    <?php
+                    //start the session
+                    session_start();
+                    //check if the user is already logged in
+                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                        //if the user is logged in, redirect them to the welcome page
+                        header("location: admin.php");
+                    }
+                    ?>
                 </div>
             </div>
             <div class="col-md-4">
@@ -19,6 +27,12 @@
                         <div>
                             <button class="button" name="submit">send</button>
                         </div>
+                        <div>
+                            <button class="registnewaccount" name="registnew">regist new account</button>
+                        </div>
+                        <?php
+
+                        ?>
                     </form>
                 </div>
             </div>
