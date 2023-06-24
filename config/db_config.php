@@ -2,7 +2,7 @@
 $servername = "localhost:3307";
 $dbname = "vakantiehuizen";
 $username = "root";
-$password = "kevin";
+$password = "oU6Z6Gg98@j";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
